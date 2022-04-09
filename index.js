@@ -1,11 +1,17 @@
+let axios = require("axios")
+
 exports.handler = async (params) => {
   const body = JSON.parse(params.body)
   const param1 = body.param1
+  const cep = body.cep
+
+  const cepInfo = await axios.get(`https://viacep.com.br/ws/${cep}/json/`)
   
   let responseBody = [
       {
           nome: "imersao",
-          versao: "v1"
+          versao: "v1",
+          cep: cepInfo.data
       }
   ]
   

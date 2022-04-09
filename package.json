@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/torneseumprogramador/aws-lambida-imersao-comunidade-nodejs/issues"
   },
-  "homepage": "https://github.com/torneseumprogramador/aws-lambida-imersao-comunidade-nodejs#readme"
+  "homepage": "https://github.com/torneseumprogramador/aws-lambida-imersao-comunidade-nodejs#readme",
+  "dependencies": {
+    "axios": "^0.26.1"
+  }
 }
